@@ -9,13 +9,27 @@ module.exports = {
   },
   module: {
     rules: [
+      // {
+      //   test: /\.js$/,
+      //   exclude: /node_modules/,
+      //   loader: 'babel-loader',
+      //   query: {
+      //     presets: ['react', 'es2015', 'react-hmre'],
+      //     plugins: ['transform-class-properties', 'transform-object-rest-spread']
+      //   }
+      // },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: ['react', 'es2015', 'react-hmre'],
-          plugins: ['transform-class-properties', 'transform-object-rest-spread']
+          presets: ['react', 'es2015'],
+          plugins: ['transform-class-properties', 'transform-object-rest-spread'],
+          env: {
+            development: {
+                presets: ["react-hmre"]
+            }
+          }
         }
       },
       {
