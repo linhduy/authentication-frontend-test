@@ -1,0 +1,31 @@
+PROJECT INFO
+    Name: Frontend
+    Framework & Library: ReactJS, Redux, Webpack, babel
+    Structure:
+        + src
+            + actions
+                - index // all actions
+            + components // all components
+                - App
+                - commentAdd // render add comment view
+                - commentUpdate // render update comment view
+                - commentList // render comment list
+                - commentBox // render comment box
+            + constants
+                - ActionsTypes // defined all constant action type
+            + containers
+                - login // render login container view
+                - noticeBoard // render notice board view
+            + reducers
+                - commentReducer // handle state of comment
+                - loginReducer // handle state of login
+                - rootReducer // combine comment and login reducer
+            + styles
+                App.css // css of all component
+            - index.html
+            - index.js // config and render ReactDOM with store
+        - .babelrc
+        - package.json
+        - webpack.config.js
+SERVER
+    Port: 8081

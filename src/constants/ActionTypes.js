@@ -1,0 +1,9 @@
+export const LOGIN = 'LOGIN';
+export const LOGOUT = 'LOGOUT';
+export const PROFILE = 'PROFILE';
+export const AUTH_FAIL = 'AUTH_FAIL';
+export const COMMENTS_FETCH = 'COMMENTS_FETCH';
+export const COMMENTS_FETCH_BY_ID = 'COMMENTS_FETCH_BY_ID';
+export const COMMENT_ADD = 'COMMENT_ADD';
+export const COMMENT_UPDATE = 'COMMENT_UPDATE';
+export const COMMENT_DELETE = 'COMMENT_DELETE';
